@@ -28,7 +28,6 @@ The study evaluates the performance of IMU-based algorithms for stance and strid
 •	Van Werkhoven 2019\
 •	Yang 2022
 
-## Purpose
 Each function takes accerelometer, gyroscope and/or magnetometer data from the foot, shank or lower back, returning initial contacts (IC) and toe offs (TO) for stride and stance times estimation.
 
 ## Dependencies
