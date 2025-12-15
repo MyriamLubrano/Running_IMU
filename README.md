@@ -8,8 +8,8 @@ Submitted to Journal of Biomechanics, January 2026.\
 The study evaluates the performance of IMU-based algorithms for stance and stride time estimation during running, across different sensor placements (foot, shank, and lower back) and running speeds (15, 20, and 25 km/h), using OptoJump as reference system.
 
 ## Folders organization
--	**> Data** contains both raw IMU signals (_data_IMU.mat_) and reference OptoJump measurements (_data_OJ.mat_), organized by device location, velocity, and running trials.
 -	**> Algorithms** contains the IMU-based algorithms reimplemented in MATLAB (see the list below).
+-	**> Data** contains both raw IMU signals (_data_IMU.mat_) and reference OptoJump measurements (_data_OJ.mat_), organized by device location, velocity, and running trials.
 
 ### List of implemented algorithms
 •	Aubol 2020\
