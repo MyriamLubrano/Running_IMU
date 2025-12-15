@@ -34,7 +34,7 @@ Each function takes accerelometer, gyroscope and/or magnetometer data from the f
 •	MATLAB's Signal Processing Toolbox\
 •	MATLAB's Aerospace Toolbox\
 •	MATLAB's Sensor Fusion and Tracking Toolbox\
-•	MATLAB's Statistics and Machine Learning Toolbox\
+•	MATLAB's Statistics and Machine Learning Toolbox
 
 
 ## Support
