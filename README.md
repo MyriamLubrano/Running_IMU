@@ -7,7 +7,11 @@ Lubrano M., Rossanigo R., Cereatti A., Cuppini C., Fantozzi S., "_In-field tempo
 Submitted to Journal of Biomechanics, January 2026.\
 The study evaluates the performance of IMU-based algorithms for stance and stride time estimation during running, across different sensor placements (foot, shank, and lower back) and running speeds (15, 20, and 25 km/h), using OptoJump as reference system.
 
-## List of implemented algorithms
+## Folders organization
+-	**> Data** contains both raw IMU signals (_data_IMU.mat_) and reference OptoJump measurements (_data_OJ.mat_), organized by device location, velocity, and running trials.
+-	**> Algorithms** contains the IMU-based algorithms reimplemented in MATLAB (see the list below).
+
+### List of implemented algorithms
 •	Aubol 2020\
 •	Bailey 2015\
 •	Blauberger 2021\
@@ -30,7 +34,7 @@ The study evaluates the performance of IMU-based algorithms for stance and strid
 
 Each function takes accerelometer, gyroscope and/or magnetometer data from the foot, shank or lower back, returning initial contacts (IC) and toe offs (TO) for stride and stance times estimation.
 
-## Dependencies
+### Dependencies
 •	MATLAB's Signal Processing Toolbox\
 •	MATLAB's Aerospace Toolbox\
 •	MATLAB's Sensor Fusion and Tracking Toolbox\
