@@ -16,7 +16,7 @@ function [IC,TO] = Bailey_2015(acc,gyr,fs,MS)
 %   IC          detected initial contacts
 %   TO          detected toe offs
 %
-% Author: Myriam Lubrano
+% Authors: Myriam Lubrano, Rachele Rossanigo, Elena Dipalma 
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -121,6 +121,7 @@ IC = IC(:);
 TO = TO(:);
 
 end
+
 
 
 
