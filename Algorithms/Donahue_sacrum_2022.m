@@ -1,7 +1,8 @@
 function [IC,TO] = Donahue_sacrum_2022(acc,gyr,mag,fs)
 
 % -------------------------------------------------------------------------
-% Donahue_sacrum_2022
+% This implementation is based on the methodology described in Donahue, 2022.
+% The original authors of the referenced papers are not responsible for this implementation.
 %
 % IC and TO detection from antero-posterior acceleration
 %
@@ -14,6 +15,8 @@ function [IC,TO] = Donahue_sacrum_2022(acc,gyr,mag,fs)
 % OUTPUT:
 %   IC          detected initial contacts
 %   TO          detected toe offs
+%
+% Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -105,4 +108,5 @@ IC = IC(:);
 TO = TO(:);
 
 end
+
 
