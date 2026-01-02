@@ -1,7 +1,8 @@
 function [IC,TO] = Bailey_2015(acc,gyr,fs,MS)
 
 % -------------------------------------------------------------------------
-% Bailey_2015
+% This implementation is based on the methodology described in Bailey, 2015.
+% The original authors of the referenced papers are not responsible for this implementation.
 %
 % IC and TO detection from medio-lateral angular velocity
 %
@@ -14,6 +15,8 @@ function [IC,TO] = Bailey_2015(acc,gyr,fs,MS)
 % OUTPUT:
 %   IC          detected initial contacts
 %   TO          detected toe offs
+%
+% Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -118,6 +121,7 @@ IC = IC(:);
 TO = TO(:);
 
 end
+
 
 
 
