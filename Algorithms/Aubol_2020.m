@@ -1,7 +1,8 @@
 function [IC] = Aubol_2020(acc,fs)
 
 % -------------------------------------------------------------------------
-% Aubol_2020
+% This implementation is based on the methodology described in Aubol, 2020.
+% The original authors of the referenced papers are not responsible for this implementation.
 % 
 % IC detection from resultant acceleration using peak detection
 %
@@ -11,6 +12,9 @@ function [IC] = Aubol_2020(acc,fs)
 %
 % OUTPUT:
 %   IC          detected initial contacts
+%
+%
+% Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -108,4 +112,5 @@ end
 IC = IC(:);
 
 end
+
 
