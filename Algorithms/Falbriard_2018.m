@@ -1,7 +1,8 @@
 function [IC,TO] = Falbriard_2018(acc,gyr,fs)
 
 % -------------------------------------------------------------------------
-% Falbriard_2018
+% This implementation is based on the methodology described in Falbriard, 2018.
+% The original authors of the referenced papers are not responsible for this implementation.
 %
 % IC and TO detection from resultant acceleration
 % Windowed in mid-swing to mid-swing cycles Falbriard 2018
@@ -13,6 +14,8 @@ function [IC,TO] = Falbriard_2018(acc,gyr,fs)
 % OUTPUT:
 %   IC          detected initial contacts
 %   TO          detected toe offs
+%
+% Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -80,4 +83,5 @@ IC = IC(:);
 TO = TO(:);
 
 end
+
 
