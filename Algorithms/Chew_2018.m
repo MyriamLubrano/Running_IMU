@@ -1,7 +1,8 @@
 function [IC,TO] = Chew_2018(acc,MS)
 
 % -------------------------------------------------------------------------
-% Chew_2018
+% This implementation is based on the methodology described in Chew, 2018.
+% The original authors of the referenced papers are not responsible for this implementation.
 %
 % IC and TO detection from antero-posterior acceleration 
 % Windowed in mid-swing to mid-swing cycles
@@ -13,6 +14,8 @@ function [IC,TO] = Chew_2018(acc,MS)
 % OUTPUT:
 %   IC          detected initial contacts
 %   TO          detected toe offs
+%
+% Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -56,4 +59,5 @@ IC = IC(:);
 TO = TO(:);
 
 end
+
 
