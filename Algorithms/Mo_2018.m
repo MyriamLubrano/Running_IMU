@@ -1,7 +1,8 @@
 function [IC,TO] = Mo_2018(acc_foot,acc_tibia,MS)
 
 % -------------------------------------------------------------------------
-% Mo_2018
+% This implementation is based on the methodology described in Mo, 2018.
+% The original authors of the referenced papers are not responsible for this implementation.
 %
 % IC and TO detection from acceleration using two sensors 
 % (dorsum of the foot + medial tibia)
@@ -16,6 +17,8 @@ function [IC,TO] = Mo_2018(acc_foot,acc_tibia,MS)
 % OUTPUT:
 %   IC          detected initial contacts
 %   TO          detected toe offs
+%
+% Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -76,4 +79,5 @@ IC = IC(:);
 TO = TO(:);
 
 end
+
 
