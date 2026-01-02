@@ -1,7 +1,8 @@
 function [IC,TO] = Strohrmann_2012(acc,fs,MS,th)
 
 % -------------------------------------------------------------------------
-% Strohrmann_2012
+% This implementation is based on the methodology described in Strohrmann, 2012.
+% The original authors of the referenced papers are not responsible for this implementation.
 %
 % IC and TO detection from acceleration
 % Windowed in mid-swing to mid-swing cycles
@@ -15,6 +16,8 @@ function [IC,TO] = Strohrmann_2012(acc,fs,MS,th)
 % OUTPUT:
 %   IC          detected initial contacts
 %   TO          detected toe offs
+%
+% Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -70,4 +73,5 @@ IC = IC(:);
 TO = TO(:);
 
 end
+
 
