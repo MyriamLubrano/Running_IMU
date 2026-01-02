@@ -1,7 +1,8 @@
 function [IC,TO] = Patoz_2022(acc,fs,body_mass)
 
 % -------------------------------------------------------------------------
-% Patoz_2022
+% This implementation is based on the methodology described in Patoz, 2022.
+% The original authors of the referenced papers are not responsible for this implementation.
 %
 % IC and TO detection from vertical acceleration
 % Windowed in mid-swing to mid-swing cycles
@@ -13,6 +14,8 @@ function [IC,TO] = Patoz_2022(acc,fs,body_mass)
 % OUTPUT:
 %   IC          detected initial contacts
 %   TO          detected toe offs
+%
+% Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -94,4 +97,5 @@ IC = IC(:);
 TO = TO(:);
 
 end
+
 
