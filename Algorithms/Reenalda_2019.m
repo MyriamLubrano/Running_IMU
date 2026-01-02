@@ -1,7 +1,8 @@
 function [IC,TO] = Reenalda_2019(acc,gyr,MS)
 
 % -------------------------------------------------------------------------
-% Reenalda_2019
+% This implementation is based on the methodology described in Reenalda, 2019.
+% The original authors of the referenced papers are not responsible for this implementation.
 %
 % IC and TO detection from resultant acceleration and angular velocity
 % Windowed in mid-swing to mid-swing cycles
@@ -14,6 +15,8 @@ function [IC,TO] = Reenalda_2019(acc,gyr,MS)
 % OUTPUT:
 %   IC          detected initial contacts
 %   TO          detected toe offs
+%
+% Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -74,4 +77,5 @@ IC = IC(:);
 TO = TO(:);
 
 end
+
 
