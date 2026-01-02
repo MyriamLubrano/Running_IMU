@@ -1,7 +1,8 @@
 function [IC_min] = Giandolini_2014(acc_heel,acc_met,fs,MS)
 
 % -------------------------------------------------------------------------
-% Giandolini_2014
+% This implementation is based on the methodology described in Giandolini, 2014.
+% The original authors of the referenced papers are not responsible for this implementation.
 %
 % IC detection from vertical acceleration of heel and forefoot
 % Windowed in mid-swing to mid-swing cycles
@@ -14,6 +15,8 @@ function [IC_min] = Giandolini_2014(acc_heel,acc_met,fs,MS)
 %
 % OUTPUT:
 %   IC          detected initial contacts
+%
+% Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -65,4 +68,5 @@ end
 IC = IC(:);
 
 end
+
 
