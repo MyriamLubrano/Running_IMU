@@ -1,7 +1,8 @@
 function [IC,TO] = Yang_2022(acc,gyr,fs,MS)
 
 % -------------------------------------------------------------------------
-% Yang_2022
+% This implementation is based on the methodology described in Yang, 2022.
+% The original authors of the referenced papers are not responsible for this implementation.
 %
 % IC and TO detection using peak detection on both acceleration and angular
 % velocity
@@ -15,6 +16,8 @@ function [IC,TO] = Yang_2022(acc,gyr,fs,MS)
 % OUTPUT:
 %   IC          detected initial contacts
 %   TO          detected toe offs
+%
+% Authors: Myriam Lubrano, Rachele Rossanigo, Elena Dipalma 
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -101,6 +104,7 @@ IC = IC(:);
 TO = TO(:);
 
 end
+
 
 
 
