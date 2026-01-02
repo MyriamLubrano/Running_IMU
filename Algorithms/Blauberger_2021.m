@@ -1,7 +1,8 @@
 function [IC,TO] = Blauberger_2021(acc,gyr,fs,MS,min_dist)
 
 % -------------------------------------------------------------------------
-% Blauberger_2021
+% This implementation is based on the methodology described in Blauberger, 2021.
+% The original authors of the referenced papers are not responsible for this implementation.
 %
 % IC and TO detection from resultant acceleration and angular velocity
 % Windowed in mid-swing to mid-swing cycles
@@ -14,6 +15,8 @@ function [IC,TO] = Blauberger_2021(acc,gyr,fs,MS,min_dist)
 % OUTPUT:
 %   IC          detected initial contacts
 %   TO          detected toe offs
+%
+% Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -80,4 +83,5 @@ IC = IC(:);
 TO = TO(:);
 
 end
+
 
