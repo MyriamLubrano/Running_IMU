@@ -1,7 +1,8 @@
 function [IC,TO] = Falbriard_2020(gyr,fs)
 
 % -------------------------------------------------------------------------
-% Falbriard_2020
+% This implementation is based on the methodology described in Falbriard, 2020.
+% The original authors of the referenced papers are not responsible for this implementation.
 %
 % IC and TO detection from resultant angular velocity
 % Windowed in mid-swing to mid-swing cycles as in Falbriard 2018
@@ -13,6 +14,8 @@ function [IC,TO] = Falbriard_2020(gyr,fs)
 % OUTPUT:
 %   IC          detected initial contacts
 %   TO          detected toe offs
+%
+% Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -71,4 +74,5 @@ IC = IC(:);
 TO = TO(:);
 
 end
+
 
