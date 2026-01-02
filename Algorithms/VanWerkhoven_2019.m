@@ -1,7 +1,9 @@
 function [IC] = VanWerkhoven_2019(acc,MS)
 
 % -------------------------------------------------------------------------
-% VanWerkhoven_2019
+% This implementation is based on the methodology described in Van Werkhoven, 2019.
+% The original authors of the referenced papers are not responsible for this implementation.
+%
 % IC detection from resultant acceleration using peak detection
 % Windowed mid-swing → mid-swing search
 %
@@ -11,6 +13,8 @@ function [IC] = VanWerkhoven_2019(acc,MS)
 %
 % OUTPUT:
 %   IC          detected initial contacts
+%
+% Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -48,4 +52,5 @@ end
 IC = IC(:);
 
 end
+
 
