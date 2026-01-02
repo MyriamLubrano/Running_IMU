@@ -1,7 +1,8 @@
 function [IC,TO] = Lee_2010(acc,fs)
 
 % -------------------------------------------------------------------------
-% Lee_2010
+% This implementation is based on the methodology described in Lee, 2010.
+% The original authors of the referenced papers are not responsible for this implementation.
 %
 % IC and TO detection from antero-posterior acceleration
 %
@@ -12,6 +13,8 @@ function [IC,TO] = Lee_2010(acc,fs)
 % OUTPUT:
 %   IC          detected initial contacts
 %   TO          detected toe offs
+%
+% Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -65,4 +68,5 @@ IC = IC(:);
 TO = TO(:);
 
 end
+
 
