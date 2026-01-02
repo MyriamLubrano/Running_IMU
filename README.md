@@ -40,6 +40,8 @@ Each function takes accerelometer, gyroscope and/or magnetometer data from the f
 •	MATLAB's Sensor Fusion and Tracking Toolbox\
 •	MATLAB's Statistics and Machine Learning Toolbox
 
+### Disclaimer
+This repository includes implementations of existing methods. The original authors of the referenced algorithms are not responsible for any issues or results obtained using these implementations.
 
 ## Support
 For questions or technical issues please contact Myriam Lubrano at myriam.lubrano2@unibo.it.
