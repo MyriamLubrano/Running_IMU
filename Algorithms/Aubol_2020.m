@@ -13,7 +13,6 @@ function [IC] = Aubol_2020(acc,fs)
 % OUTPUT:
 %   IC          detected initial contacts
 %
-%
 % Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
@@ -112,5 +111,6 @@ end
 IC = IC(:);
 
 end
+
 
 
