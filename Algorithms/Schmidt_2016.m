@@ -1,7 +1,8 @@
 function [IC,TO] = Schmidt_2016(acc,gyr,fs,MS)
 
 % -------------------------------------------------------------------------
-% Schmidt_2016
+% This implementation is based on the methodology described in Schmidt, 2016.
+% The original authors of the referenced papers are not responsible for this implementation.
 %
 % IC and TO detection from vertical acceleration
 % Windowed in mid-swing to mid-swing cycles
@@ -15,6 +16,8 @@ function [IC,TO] = Schmidt_2016(acc,gyr,fs,MS)
 % OUTPUT:
 %   IC          detected initial contacts
 %   TO          detected toe offs
+%
+% Author: Myriam Lubrano
 % -------------------------------------------------------------------------
 
 IC = [];
@@ -120,4 +123,5 @@ IC = IC(:);
 TO = TO(:);
 
 end
+
 
