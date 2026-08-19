@@ -3,8 +3,8 @@
 Written by Myriam Lubrano, Department of Electrical, Electronic and Information Engineering "Guglielmo Marconi", University of Bologna, Bologna, Italy.
 
 This repository accompanies the paper:\
-Lubrano M., Rossanigo R., Cereatti A., Cuppini C., Fantozzi S., "_In-field temporal phase analysis of running: performance assessment of 36 inertial-based algorithms across different device positions and running speeds_".
-Submitted to Journal of Biomechanics, January 2026.\
+Lubrano M., Rossanigo R., Cereatti A., Cuppini C., Fantozzi S., "_In-field temporal phase analysis of running: performance assessment of 36 IMU-based algorithms across different device positions and running speeds_".
+Accepted by Journal of Biomechanics, August 2026.\
 The study evaluates the performance of IMU-based algorithms for stance and stride time estimation during running, across different sensor placements (foot, shank, and lower back) and running speeds (15, 20, and 25 km/h), using OptoJump as reference system.
 
 ## Folders organization
